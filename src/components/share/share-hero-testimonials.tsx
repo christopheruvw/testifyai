@@ -1,27 +1,33 @@
+import Image from "next/image";
 import { Star } from "lucide-react";
 
 const TESTIMONIALS = [
   {
-    initials: "JA",
-    name: "Julia Atreya",
-    role: "Logistics Director",
-    quote: "Takes the pressure off — I just answered prompts and got something I was proud to share.",
+    name: "Amara Okafor",
+    role: "Logistics Director, Lagos",
+    quote:
+      "Takes the pressure off — I just answered prompts and got something I was proud to share.",
+    avatar: "/avatars/amara.png",
+    avatarAlt: "Portrait of Amara Okafor",
     position: "hero-tcard-1",
     delay: "animate-delay-2",
   },
   {
-    initials: "AM",
-    name: "Alan Morrison",
-    role: "Founder & CEO",
+    name: "James Whitfield",
+    role: "Founder & CEO, London",
     quote: "We close deals faster once real stories are on the site. It's a no-brainer.",
+    avatar: "/avatars/james.png",
+    avatarAlt: "Portrait of James Whitfield",
     position: "hero-tcard-2",
     delay: "animate-delay-3",
   },
   {
-    initials: "TM",
-    name: "Tom Morton",
-    role: "CMO, Brand Collective",
-    quote: "I share more wins now. It's not just a nice-to-have — it actually moves the needle.",
+    name: "Kwame Mensah",
+    role: "CMO, Accra",
+    quote:
+      "I share more wins now. It's not just a nice-to-have — it actually moves the needle.",
+    avatar: "/avatars/kwame.png",
+    avatarAlt: "Portrait of Kwame Mensah",
     position: "hero-tcard-3",
     delay: "animate-delay-4",
   },
@@ -66,7 +72,15 @@ export function ShareHeroTestimonials() {
           >
             <div className="hero-tcard-accent" />
             <div className="hero-tcard-header">
-              <div className="hero-tcard-avatar">{item.initials}</div>
+              <div className="hero-tcard-avatar">
+                <Image
+                  src={item.avatar}
+                  alt={item.avatarAlt}
+                  width={32}
+                  height={32}
+                  className="hero-tcard-avatar-img"
+                />
+              </div>
               <div className="hero-tcard-meta">
                 <p className="hero-tcard-name">{item.name}</p>
                 <p className="hero-tcard-role">{item.role}</p>
