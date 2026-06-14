@@ -1,5 +1,6 @@
 import { ArrowUpRight, Sparkles, Star } from "lucide-react";
 import { CREATOR_NAME } from "@/lib/constants";
+import { ShareHeroTestimonials } from "@/components/share/share-hero-testimonials";
 
 interface ShareHeroLandingProps {
   onStart: () => void;
@@ -9,7 +10,8 @@ interface ShareHeroLandingProps {
 export function ShareHeroLanding({ onStart, isLoading }: ShareHeroLandingProps) {
   return (
     <div className="hero-landing animate-fade-up">
-      <div className="hero-landing-copy">
+      <div className="hero-landing-grid">
+        <div className="hero-landing-copy">
         <span className="hero-eyebrow animate-fade-up animate-delay-1">
           <Sparkles className="w-3.5 h-3.5" />
           AI-powered testimonials for {CREATOR_NAME}
@@ -69,6 +71,11 @@ export function ShareHeroLanding({ onStart, isLoading }: ShareHeroLandingProps) 
               <p className="hero-stat-label">More testimonials collected</p>
             </div>
           </div>
+        </div>
+        </div>
+
+        <div className="hero-landing-visual">
+          <ShareHeroTestimonials />
         </div>
       </div>
     </div>
