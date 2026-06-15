@@ -38,7 +38,7 @@ export function ShareHeroLanding({ onStart, isLoading }: ShareHeroLandingProps) 
             <span className="hero-cta-icon">
               <ArrowUpRight className="w-4 h-4" />
             </span>
-            Get started
+            Vouch For Chris
           </button>
           <button
             type="button"
