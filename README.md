@@ -8,7 +8,7 @@ The fastest and easiest way to collect testimonials from students, clients, and 
 - **AI-powered generation** — creates Short, Professional, and Story-Based versions
 - **Review & edit flow** — respondents approve, edit, or write their own version
 - **Admin dashboard** at `/admin` — view, edit, delete, and export testimonials
-- **Email notifications** — admin alerted on new submissions via Resend
+- **Email notifications** — admin alerted on new submissions via ZeptoMail
 - **CSV export** — download all testimonials
 - **Photo uploads** — optional respondent photos via Supabase Storage
 
@@ -18,7 +18,7 @@ The fastest and easiest way to collect testimonials from students, clients, and 
 - TailwindCSS + Shadcn-style UI components
 - Supabase (PostgreSQL + Auth + Storage)
 - Groq API (llama-3.3-70b-versatile, free tier)
-- Resend (email)
+- ZeptoMail (email)
 - Vercel Analytics
 
 ## Getting Started
