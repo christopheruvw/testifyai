@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <rect width="180" height="180" rx="40" fill="#d4f764"/>
+  <text
+    x="90"
+    y="118"
+    text-anchor="middle"
+    font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    font-size="72"
+    font-weight="800"
+    letter-spacing="-0.04em"
+    fill="#0a0a0a"
+  >AI</text>
+</svg>
